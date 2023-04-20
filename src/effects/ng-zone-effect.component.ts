@@ -4,7 +4,7 @@ import { Component, effect, signal } from '@angular/core';
   template: `<button (click)="update()">Update</button>`,
   standalone: true,
 })
-export class EffectExampleComponent {
+export class NgZoneEffectExampleComponent {
   counter = signal(0);
 
   constructor() {

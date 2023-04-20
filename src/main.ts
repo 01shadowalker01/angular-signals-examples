@@ -1,20 +1,25 @@
-import 'zone.js/dist/zone';
-import { Component } from '@angular/core';
-import { bootstrapApplication } from '@angular/platform-browser';
-import { provideRouter, RouterModule } from '@angular/router';
-import { routes } from './routes';
+import "zone.js/dist/zone";
+import { Component } from "@angular/core";
+import { bootstrapApplication } from "@angular/platform-browser";
+import { provideRouter, Router, RouterModule } from "@angular/router";
+import { routes } from "./routes";
+import { NgIf } from "@angular/common";
 
 @Component({
-  selector: 'my-app',
+  selector: "my-app",
   standalone: true,
   template: `
-    <a routerLink="/">< Home</a>
-    <br><br>
+    <div *ngIf="router.url !== '/'">
+      <a routerLink="/">< Home</a>
+      <br /><br />
+    </div>
     <router-outlet></router-outlet>
   `,
-  imports: [RouterModule],
+  imports: [RouterModule, NgIf],
 })
-export class Main {}
+export class Main {
+  constructor(public router: Router) {}
+}
 
 bootstrapApplication(Main, {
   providers: [provideRouter(routes)],

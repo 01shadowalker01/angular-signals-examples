@@ -1,6 +1,6 @@
 import { Component, computed, effect, signal } from '@angular/core';
 @Component({
-  template: `<button (click)="update()">Update</update>`,
+  template: `<button (click)="update()">Update</button>`,
   standalone: true,
 })
 export class ComputedEffectComponent {
