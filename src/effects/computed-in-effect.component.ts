@@ -8,13 +8,13 @@ export class ComputedEffectComponent {
 
   constructor() {
     const isEven = computed(() => {
+      console.log('computed called ');
       return this.counter() % 2 === 0;
     });
 
     effect(() => {
       console.log('Effect runs with: ', isEven());
     });
-    // logs "Effect runs with: true" when component is initialy rendered
   }
 
   update() {
