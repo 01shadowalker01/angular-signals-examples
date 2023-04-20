@@ -23,3 +23,5 @@
 //   },
 //   { directive: RotateDirective, inputs: ["rotate"] },
 // ];
+
+// https://angularexperts.io/blog/angular-directive-composition
