@@ -18,21 +18,18 @@ export class BasicComputedExampleComponent {
   });
 
   update() {
-    this.counter.mutate((value) => value + 1);
+    this.counter.update((value) => value + 1);
   }
 }
 
+// const counter = signal(0);
 
-const counter = signal(0);
+// const isEven = computed(() => {
+//     console.log("isEven called");
+//     return counter() % 2 === 0;
+// });
 
-const isEven = computed(() => {
-    console.log("isEven called");
-    return counter() % 2 === 0;
-});
+// counter();
 
-counter();
-
-counter.set(1);
-counter.update((current) => current + 1);
-
-isEven();
+// counter.set(1);
+// counter.update((current) => current + 1);

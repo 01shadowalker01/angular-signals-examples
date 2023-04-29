@@ -6,19 +6,18 @@
 //   template: `<img [src]="'assets/' + image + '.svg'" />`,
 //   hostDirectives: [
 //     { directive: TooltipDirective },
-//     { directive: DragableDirective },
+//     { directive: DraggableDirective },
 //     { directive: RotateDirective },
 //   ],
 // })
 // export class PinComponent {}
-
 //////////
 
 // hostDirectives: [
 //   { directive: TooltipDirective, inputs: ["tooltip"] },
 //   {
-//     directive: DragableDirective,
-//     inputs: ["dragzone"],
+//     directive: DraggableDirective,
+//     inputs: ["dragZone"],
 //     outputs: ["pinGrabbed"],
 //   },
 //   { directive: RotateDirective, inputs: ["rotate"] },
