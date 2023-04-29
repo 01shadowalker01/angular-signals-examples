@@ -18,7 +18,7 @@ export class BasicComputedExampleComponent {
   });
 
   update() {
-    this.counter.update((value) => value + 1);
+    this.counter.mutate((value) => value + 1);
   }
 }
 
@@ -35,4 +35,4 @@ counter();
 counter.set(1);
 counter.update((current) => current + 1);
 
-counter();
+isEven();

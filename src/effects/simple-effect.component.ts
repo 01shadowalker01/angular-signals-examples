@@ -20,17 +20,17 @@ export class SimpleEffectComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const counter = signal(0);
+    // const counter = signal(0);
 
-    effect(() => {
-      console.log("Effect2 runs with: ", counter());
-    });
+    // effect(() => {
+    //   console.log("Effect2 runs with: ", counter());
+    // });
 
-    counter();
+    // counter();
 
-    counter.set(1);
-    counter.update((current) => current + 1);
+    // counter.set(1);
+    // counter.update((current) => current + 1);
 
-    counter();
+    // counter();
   }
 }

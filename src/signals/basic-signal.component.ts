@@ -1,10 +1,10 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal } from "@angular/core";
 
 @Component({
-  selector: 'basic-signal',
+  selector: "basic-signal",
   standalone: true,
   template: `
-    Counter: {{counter()}}<br>
+    Counter: {{ counter() }}<br />
     <button (click)="update()">Update</button>
   `,
 })
